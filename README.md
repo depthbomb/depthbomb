@@ -1,5 +1,5 @@
 <a href="https://s.team/p/fwc-crhc">
-	<img src="https://img.shields.io/badge/Steam-https://s.team/p/fwccrhc-000000?logo=steam">
+	<img src="https://img.shields.io/badge/Steam-76561198026398801-000000?logo=steam">
 </a>
 
 <a href="#">
