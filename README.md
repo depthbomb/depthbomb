@@ -1,4 +1,10 @@
-<a href='https://ko-fi.com/O4O1DV77' target='_blank'><img height='36' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' alt='Buy Me a Coffee at ko-fi.com' /></a>
+<a href="https://s.team/p/fwc-crhc">
+	<img src="https://img.shields.io/badge/Steam-https://s.team/p/fwccrhc-000000?logo=steam">
+</a>
+
+<a href="#">
+	<img src="https://img.shields.io/badge/Discord-depthbomb%230163-5865F2?logo=discord">
+</a>
 
 ---
 
@@ -15,4 +21,4 @@
 
 ---
 
-<img src="https://komarev.com/ghpvc/?username=depthbomb&style=flat-square&color=E11D48">
+<a href='https://ko-fi.com/O4O1DV77' target='_blank'><img height='36' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' alt='Buy Me a Coffee at ko-fi.com' /></a>
