@@ -21,4 +21,4 @@
 
 ---
 
-❤️ If you like my work and want to support me, you can do so by <a href="https://us.shop.battle.net/en-us/product/world-of-warcraft-game-time">feeding my WoW addiction.</a>
+❤️ If you like my work and want to support me, you can do so by feeding my WoW addiction with <a href="https://us.shop.battle.net/en-us/product/world-of-warcraft-game-time">this</a> or <a href="https://us.shop.battle.net/en-us/product/balance">this.</a>
