@@ -21,4 +21,4 @@
 
 ---
 
-<a href='https://ko-fi.com/O4O1DV77' target='_blank'><img height='36' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' alt='Buy Me a Coffee at ko-fi.com' /></a>
+❤️ If you like my work and want to support me, you can do so by <a href="https://us.shop.battle.net/en-us/product/world-of-warcraft-game-time">feeding my WoW addiction.</a>
