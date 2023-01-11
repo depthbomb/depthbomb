@@ -6,6 +6,8 @@
 	<img src="https://img.shields.io/badge/Discord-depthbomb%230163-5865F2?logo=discord">
 </a>
 
+---
+
 <table>
 	  <tr>
 		<td align="center" style="padding:0;width:50%;">
@@ -20,5 +22,3 @@
 ---
 
 ❤️ If you like my work and want to support me, you can do so by feeding my WoW addiction with <a href="https://us.shop.battle.net/en-us/product/world-of-warcraft-game-time">this</a> or <a href="https://us.shop.battle.net/en-us/product/balance">this.</a>
-
----
