@@ -3,7 +3,7 @@
 </a>
 
 <a href="#">
-	<img src="https://img.shields.io/badge/Discord-depthbomb%230163-5865F2?logo=discord">
+	<img src="https://img.shields.io/badge/Discord-depthbomb-5865F2?logo=discord">
 </a>
 
 ---
