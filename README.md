@@ -2,7 +2,7 @@
 	<img src="https://img.shields.io/badge/Steam-76561198026398801-000000?logo=steam">
 </a>
 
-<a href="#">
+<a href="https://discord.com/users/133325534548590594">
 	<img src="https://img.shields.io/badge/Discord-depthbomb-5865F2?logo=discord">
 </a>
 
