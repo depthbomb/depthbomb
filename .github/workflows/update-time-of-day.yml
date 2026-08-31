@@ -2,7 +2,7 @@ name: Update time-of-day banner
 
 on:
   schedule:
-    - cron: "7,37 * * * *"
+    - cron: "30 * * * *"
       timezone: "America/Chicago"
   workflow_dispatch:
 
