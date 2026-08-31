@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="750"
+     height="200"
+     viewBox="0 0 750 200"
+     role="img"
+     aria-labelledby="title description"
+     data-time="{{TIME}}"
+     data-theme="{{THEME}}">
+  <title id="title">{{TIME}} America/Chicago</title>
+  <desc id="description">Generated for {{TIME}} America/Chicago.</desc>
+
+  <defs>
+    <clipPath id="rounded-frame">
+      <rect width="750" height="200" rx="24" ry="24"/>
+    </clipPath>
+
+    <linearGradient id="sky-gradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="{{SKY_TOP}}"/>
+      <stop offset="58%" stop-color="{{SKY_MIDDLE}}"/>
+      <stop offset="100%" stop-color="{{SKY_BOTTOM}}"/>
+    </linearGradient>
+
+    <radialGradient id="sun-fill" cx="38%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="#fffde1"/>
+      <stop offset="58%" stop-color="#ffe86d"/>
+      <stop offset="100%" stop-color="#ffc83d"/>
+    </radialGradient>
+
+    <radialGradient id="moon-fill" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#cad4e6"/>
+    </radialGradient>
+
+    <linearGradient id="haze-gradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity=".28"/>
+    </linearGradient>
+
+    <linearGradient id="ground-gradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="{{HORIZON_TOP}}"/>
+      <stop offset="100%" stop-color="{{HORIZON_BOTTOM}}"/>
+    </linearGradient>
+
+    <filter id="sun-glow" x="-250%" y="-250%" width="600%" height="600%">
+      <feGaussianBlur stdDeviation="13"/>
+    </filter>
+
+    <filter id="moon-glow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+
+    <filter id="cloud-softness" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation=".45"/>
+    </filter>
+
+    <g id="cloud-near">
+      <ellipse cx="0" cy="7" rx="44" ry="9"/>
+      <circle cx="-22" cy="2" r="12"/>
+      <circle cx="-3" cy="-5" r="17"/>
+      <circle cx="20" cy="2" r="12"/>
+    </g>
+
+    <g id="cloud-far">
+      <ellipse cx="0" cy="7" rx="52" ry="10"/>
+      <circle cx="-28" cy="2" r="13"/>
+      <circle cx="-7" cy="-7" r="19"/>
+      <circle cx="19" cy="-1" r="15"/>
+      <circle cx="35" cy="5" r="10"/>
+    </g>
+  </defs>
+
+  <g clip-path="url(#rounded-frame)">
+    <rect width="750" height="200" fill="url(#sky-gradient)"/>
+
+    <g opacity="{{STARS_OPACITY}}" fill="#ffffff">
+      <!-- Chicago's latitude places the apparent northern celestial pole above the horizon. -->
+      <g transform="rotate({{STAR_ROTATION}} 375 95)">
+        {{STAR_FIELD}}
+      </g>
+      <!-- Polaris remains nearly fixed while the surrounding field rotates. -->
+      <circle cx="375" cy="95" r="1.55" opacity=".9"/>
+    </g>
+
+    <g transform="translate({{SUN_X}} {{SUN_Y}})" opacity="{{SUN_OPACITY}}">
+      <circle r="35" fill="#ffe781" opacity=".34" filter="url(#sun-glow)"/>
+      <circle r="20" fill="url(#sun-fill)"/>
+    </g>
+
+    <g transform="translate({{MOON_X}} {{MOON_Y}})" opacity="{{MOON_OPACITY}}">
+      <circle r="29" fill="#dce9ff" opacity=".24" filter="url(#moon-glow)"/>
+      <circle r="17" fill="url(#moon-fill)"/>
+      <circle cx="-6" cy="-5" r="3.2" fill="#aebbcf" opacity=".48"/>
+      <circle cx="5" cy="4" r="4.1" fill="#aebbcf" opacity=".38"/>
+      <circle cx="7" cy="-7" r="2" fill="#aebbcf" opacity=".34"/>
+      <circle cx="-7" cy="8" r="2.4" fill="#aebbcf" opacity=".3"/>
+    </g>
+
+    <rect y="70" width="750" height="130" fill="url(#haze-gradient)" opacity="{{HAZE_OPACITY}}"/>
+
+    <!-- Each cloud layer includes neighboring copies so its 750px translation wraps cleanly. -->
+    <g opacity="{{CLOUDS_OPACITY}}" fill="#ffffff" filter="url(#cloud-softness)">
+      <g transform="translate({{CLOUD_OFFSET_NEAR}} 98)">
+        <use href="#cloud-near" x="-645"/>
+        <use href="#cloud-near" x="105"/>
+        <use href="#cloud-near" x="855"/>
+      </g>
+      <g transform="translate({{CLOUD_OFFSET_FAR}} 78)" opacity=".82">
+        <use href="#cloud-far" transform="translate(-156 0) scale(.78)"/>
+        <use href="#cloud-far" transform="translate(594 0) scale(.78)"/>
+        <use href="#cloud-far" transform="translate(1344 0) scale(.78)"/>
+      </g>
+    </g>
+
+    <path d="M0 169 C70 145 125 154 190 165 C255 177 312 139 379 158 C450 178 514 146 574 160 C646 176 700 145 750 151 L750 200 L0 200 Z" fill="url(#ground-gradient)"/>
+    <path d="M0 184 C91 165 168 190 252 177 C351 161 433 191 531 174 C618 159 684 179 750 169 L750 200 L0 200 Z" fill="{{NEAR_TERRAIN_COLOR}}" opacity="{{NEAR_TERRAIN_OPACITY}}"/>
+
+    <rect width="750" height="200" fill="#ff8b52" opacity="{{WARM_TINT}}" style="mix-blend-mode:soft-light"/>
+    <rect x=".75" y=".75" width="748.5" height="198.5" rx="23.25" ry="23.25" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="1.5"/>
+  </g>
+</svg>
