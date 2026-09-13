@@ -1,6 +1,6 @@
 <!-- time-of-day:start -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/depthbomb/depthbomb/master/assets/time-of-day-phases/1330.svg" width="750" height="200" alt="Current sky in the America/Chicago timezone">
+  <img src="https://raw.githubusercontent.com/depthbomb/depthbomb/master/assets/time-of-day-phases/1600.svg" width="750" height="200" alt="Current sky in the America/Chicago timezone">
 </p>
 <!-- time-of-day:end -->
 
